@@ -9,7 +9,6 @@ new CdkLearningStack(app, 'CdkLearningStack', {
     env: {
         account: '702475694110',
         region: 'us-east-1',
-
     }
 });
 

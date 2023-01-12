@@ -13,7 +13,7 @@ export class CdkLearningStack extends cdk.Stack {
             installCommands: ['npm i -g npm@latest'],
             commands: ['npm ci',
                        'npm run build',
-                       'npm cdk synth']
+                       'npx cdk synth']
             })
     })
   }

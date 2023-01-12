@@ -10,9 +10,10 @@ export class CdkLearningStack extends cdk.Stack {
         pipelineName: 'MyPipeline',
         synth: new ShellStep('Synth',{
             input: CodePipelineSource.gitHub('YuliiaKurylchyk/cdk_learning', 'master'),
+            installCommands: ['npm i -g npm@latest'],
             commands: ['npm ci',
-                        'npm run build',
-                        'npm cdk synth']
+                       'npm run build',
+                       'npm cdk synth']
             })
     })
   }
